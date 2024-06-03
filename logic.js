@@ -1,15 +1,9 @@
 //inserting the images
 function insertImage() {
     document.querySelectorAll('.box').forEach(image => {
-        if (image.innerText.length !== 0) {
-            if (image.innerText == 'Wpawn' || image.innerText == 'Bpawn') {
-                image.innerHTML = `${image.innerText} <img class='all-img all-pown' src="${image.innerText}.png" alt="">`
+        if (image.innerText.length !== 0){
+                image.innerHTML = `${image.innerText} <img class='all-img' src="${image.innerText}.png" alt="" width="65px">`
                 image.style.cursor = 'pointer'
-            }
-            else {
-                image.innerHTML = `${image.innerText} <img class='all-img' src="${image.innerText}.png" alt="">`
-                image.style.cursor = 'pointer'
-            }
         }
     })
 }
@@ -135,7 +129,7 @@ document.querySelectorAll('.box').forEach(item => {
 
         function whosTurn(toggle) {
 
-            if (item.innerText == `${toggle}Semi-Ricochet-1`) {
+            if (item.innerText == `${toggle}Semi-Richochet-1`) {
 
 
                 if (aside < 8) {
@@ -176,7 +170,7 @@ document.querySelectorAll('.box').forEach(item => {
 
             }
 
-            if (item.innerText == `${toggle}Semi-Ricochet-2`) {
+            if (item.innerText == `${toggle}Semi-Richochet-2`) {
 
 
                 if (aside < 8) {
@@ -445,5 +439,4 @@ document.querySelectorAll('.box').forEach(ee => {
       }
   })
 })
-
 
